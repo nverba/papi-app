@@ -1,0 +1,19 @@
+<h1>HI</h1>
+
+
+<script>
+	
+fetch('./papi/products', {
+	headers: {
+		'Accept': 'application/json',
+    		'Content-Type': 'application/json'
+	}
+}).then(function(response) { 
+	// Convert to JSON
+	return response.json();
+}).then(function(j) {
+	// Yay, `j` is a JavaScript object
+	console.log(j); 
+});
+	
+</script>
