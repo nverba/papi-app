@@ -9,11 +9,9 @@ fetch('./papi/products', {
     		'Content-Type': 'application/json'
 	}
 }).then(function(response) { 
-	// Convert to JSON
 	return response.json();
-}).then(function(j) {
-	// Yay, `j` is a JavaScript object
-	console.log(j); 
+}).then(function(json) {
+	console.log(json); 
 });
 	
 </script>
